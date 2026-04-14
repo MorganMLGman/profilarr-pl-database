@@ -1,0 +1,16 @@
+name: Polish
+description: Matches releases with Polish audio (lektor, dubbing, or native Polish).
+tags:
+- Language
+conditions:
+- language: polish
+  name: Polish Language
+  negate: false
+  required: false
+  type: language
+- name: PL Audio Pattern
+  type: release_title
+  required: false
+  negate: false
+  pattern: (?<![A-Z0-9])PL(?![A-Z0-9])|\.POL\.|[Pp]olish|PL-DUB|DUB\.?PL|PL-Lektor|Lektor\.?PL|(?<![A-Z])Lektor(?![A-Z])|PL-Dubbing|Dubbing
+tests: []
