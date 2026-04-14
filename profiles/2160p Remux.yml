@@ -367,4 +367,4 @@ qualities:
 upgrade_until:
   id: -4
   name: 2160p Remux
-language: must_original
+language: any
